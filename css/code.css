@@ -1,0 +1,574 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+body {
+    font-family: "inter", sans-serif;
+  }
+
+  @media(min-width:200px){
+    .header-container{
+    position: relative;
+    width: 375px;
+    height: 933px;
+    background: #e5e5e5;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .logo {
+        position: absolute;
+        height: 375px;
+        width: 96px;
+        margin-left: 16px;
+        margin-top: 32px;
+    }
+    .vector {
+        width: 16px;
+        height: 16px;
+    }
+    .texto textarea {
+        position: absolute;
+        width: 343px;
+        margin-left: 16px;
+        margin-top: 116px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0a3871;
+        background: #e5e5e5;
+        border: none;
+        border-radius: 24px;
+    }
+    .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 343px;
+        height: 158px;
+        margin-left: 16px;
+        margin-top: 485px;
+    }
+    .botones p {
+        position: absolute;
+        order: 1;
+        bottom: 80px;
+        margin-left: 25px;
+    }
+    .botones img {
+        position: absolute;
+        order: 0;
+        bottom: 80px;
+    }
+    #boton1 {
+        display: flex;
+        width: 332px;
+        height: 67px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        background: #0a3871;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        justify-content: center;
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+    #boton2 {
+        display: flex;
+        width: 332px;
+        height: 67px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        background: #a8c5e7;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        justify-content: center;
+        color: rgb(35, 33, 141);
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+    #boton3 {
+        display: none;
+    }
+    .vector-parrafo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        margin-left: 16px;
+        margin-top: 451px;
+    }
+    .parrafo {
+        width: 205px;
+        height: 18px;
+        font-style: normal;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 150%;
+        color: #495057;
+        flex: none;
+        order: 1;
+        flex-wrap: 0;
+    }
+    .aside {
+        position: absolute;
+        width: 327px;
+        height: 186px;
+        margin-left: 24px;
+        margin-top: 707px;
+        background: #ffffff;
+        border-radius: 32px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 32px;
+        gap: 32px;
+        box-shadow: 0px 24px 32px -8px;
+    }
+    .aside-textos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 263px;
+        height: 122px;
+    }
+    .aside textarea {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #343A40;
+        width: 270px;
+        height: 140px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        align-self: stretch;
+        border: none;
+    }
+  }
+
+  /* Estilos para tablet */
+
+  @media(min-width:576px){
+    .header-container {
+        position: relative;
+        width: 768px;
+        height: 1384px;
+        background: #e5e5e5;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo {
+        position: absolute;
+        margin-left: 40px;
+        margin-right: 50px;
+        margin-top: 73px;
+        height: 50px;
+        width: 31px;
+    }
+    .vector {
+        width: 16px;
+        height: 16px;
+    }
+    .vector-parrafo img {
+    position: absolute;
+    order: 0;
+    bottom: 80px;
+    }
+    .vector-parrafo p {
+        position: absolute;
+        order: 1;
+        bottom: 80px;
+        margin-left: 25px;
+    }
+    .texto textarea {
+        position: absolute;
+        width: 688px;
+        height: 500px;
+        margin-left: 40px;
+        margin-top: 220px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0a3871;
+        text-align: center;
+        resize: none;
+    }
+    .vector-parrafo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 688px;
+        height: 67px;
+        margin-left: 40px;
+        margin-top: 850px;
+    }
+    .botones {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 688px;
+        height: 67px;
+        margin-left: 40px;
+        margin-top: 850px;
+    }
+    #boton1 {
+        display: flex;
+        width: 332px;
+        height: 67px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        background: #0a3871;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        justify-content: center;
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+    #boton2 {
+        display: flex;
+        width: 332px;
+        height: 67px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        background: #b2cbe9;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        justify-content: center;
+        color: rgb(71, 54, 221);
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+    #boton3 {
+        display: none;
+    }
+    .parrafo {
+        width: 205px;
+        height: 18px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 0.8;
+        order: 1;
+        flex-grow: 0;
+        flex: none;
+    }
+    .aside {
+        position: absolute;
+        width: 688px;
+        height: 343px;
+        margin-left: 40px;
+        margin-top: 970px;
+        background: #ffffff;
+        border-radius: 32px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 32px;
+        gap: 32px;
+        box-shadow: 0px 24px 32px -8px;
+    }
+    .aside-textos textarea {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #343A40;
+        width: 624px;
+        height: 215px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        align-self: stretch;
+    }
+    #boton3 {
+        display: flex;
+        width: 624px;
+        height: 57px;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: center;
+        padding: 16px;
+        gap: 8px;
+        background: #d7e0eb;
+        border-radius: 24px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        align-self: stretch;
+        justify-content: center;
+        color: #5a3e9c;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        /* border: 1px solid #e6e9ee; */
+        line-height: 19px;
+        box-shadow: 0px 24px 32px -8px;
+    }
+  }
+
+  /* aca empiezan los estilos desktop */
+  @media(max-width:991px){
+    .footer{
+        display: none;
+    }
+  }
+
+  @media(min-width:992px){
+    .header-container {
+        display: flex;
+        position: relative;
+        width: 1440px;
+        height: 1024px;
+        background: #e5e5e5;
+      }
+      .logo {
+        position: absolute;
+        margin-left: 80px;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 0%;
+        height: 50px;
+        width: 60px;
+      }
+      .vector {
+        width: 16px;
+        height: 16px;
+      }
+      .texto {
+        position: absolute;
+        width: 680px;
+        height: 288px;
+        margin-left: 140px;
+        /* margin-top: 168px; */
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0a3871;
+    }
+    .texto textarea {
+        background: #e5e5e5;
+        margin-top: 180px;
+        height: 540px;
+    }
+    .botones {
+        display: flex;
+        bottom: 70px;
+        position: absolute;
+        margin-left: 170px;
+        height: 65px;
+        gap: 0px;
+    }
+    .vector-parrafo {
+        margin-top: 880px;
+    }
+    .vector-parrafo p {
+        position: absolute;
+        order: 1;
+        bottom: 80px;
+        margin-left: 170px;
+    }
+    .vector-parrafo img {
+        position: absolute;
+        order: 0;
+        bottom: 80px;
+        margin-left: 140px;
+    }
+    #boton1 {
+        display: flex;
+        width: 328px;
+        height: 67px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        background: #0a3871;
+        border-radius: 24px;
+        border: 1px solid #6282a8;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        justify-content: center;
+        color: white;
+        font-size: 16px;
+    }
+    #boton1:hover{
+        border-color: white;
+        font-size: 19px;
+    }
+    #boton1:active{
+        border-color: rgb(25, 214, 25);
+    }
+    #boton2 {
+        display: flex;
+        width: 328px;
+        height: 67px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        background: #d7e0eb;
+        border-radius: 24px;
+        border: 1px solid #6282a8;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin-left: 25px;
+        justify-content: center;
+        color: #5a3e9c;
+        font-size: 16px;
+    }
+    #boton2:hover{
+        border-color: white;
+        font-size: 19px;
+    }
+    #boton2:active{
+        border-color: rgb(25, 214, 25);
+    }
+    .parrafo {
+        width: 205px;
+        height: 18px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 0.8;
+        order: 1;
+        flex-grow: 0;
+        flex: none;
+    }
+    .aside {
+        position: absolute;
+        width: 400px;
+        height: 944px;
+        margin-left: 1000px;
+        margin-top: 40px;
+        background: #ffffff;
+        border-radius: 32px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .aside textarea {
+        position: absolute;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        text-align: center;
+        color: #84898f;
+        width: 336px;
+        height: 781px;
+        /* margin-top: 72px; */
+        border: none;
+        margin-left: -35px;
+    }
+    .aside div {
+        display: flex;
+    }
+    #boton3 {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: -35px;
+        width: 336px;
+        height: 67px;
+        padding: 24px;
+        gap: 8px;
+        background: #d7e0eb;
+        border-radius: 24px;
+        border: 1px solid #6282a8;
+        justify-content: center;
+        color: #5a3e9c;
+        font-size: 16px;
+        margin-top: 815px;
+        box-shadow: 0px 24px 32px -8px;
+    }
+    #boton3:hover{
+        border-color: white;
+        font-size: 19px;
+    }
+    #boton3:active{
+        border-color: rgb(25, 214, 25);
+    }
+    .redes{
+        width: 1440px;
+        height: auto;
+        background: #48484d;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .redes h4 {
+        font-family: "inter", sans-serif;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        color: #fff;
+        padding: 15px;
+    }
+    .sociales{
+        text-align: center;
+    }
+    .sociales li {
+        display: inline-block;
+    }
+    .sociales li img{
+        width: 50px;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+  }
