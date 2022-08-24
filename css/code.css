@@ -177,7 +177,7 @@ body {
     }
   }
 
-  /* Estilos para tablet */
+  /* Estilos para tablet desde acá */
 
   @media(min-width:576px){
     .header-container {
