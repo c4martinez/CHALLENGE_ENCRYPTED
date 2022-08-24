@@ -43,7 +43,8 @@ body {
         line-height: 150%;
         color: #0a3871;
         background: #e5e5e5;
-        border: none;
+        border: 0;
+        outline: none;
         border-radius: 24px;
     }
     .botones {
@@ -171,7 +172,8 @@ body {
         order: 0;
         flex-grow: 0;
         align-self: stretch;
-        border: none;
+        border: 0;
+        outline: none;
     }
   }
 
